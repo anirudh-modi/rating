@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ratings</title>
+    <style>
+        html,body{
+            font-family: sans-serif;
+            margin:0px;
+            padding:0px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .product-list{
+            display: flex;
+            padding:10px;
+        }
+        .product-container{
+            min-width: 300px;
+            max-width: 600px;
+            padding: 10px;
+            margin: 0px 10px;
+            box-shadow: 0px 2px 6px -2px grey;
+            border-radius: 2px;
+        }
+        .product-header{
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom:10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-subheader{
+            font-size: 11px;
+            color: #0000004d;
+            font-weight: bold;
+        }
+        .product-body{
+            font-size: 14px;
+            color: #0000008c;
+        }
+
+        .description{
+            font-size: 16px;
+            font-weight: 600;
+            color: #0000009c;
+            margin: 7px 0px;
+        }
+        button{
+            border: none;
+            font-size: 15px;
+            border-radius: 3px;
+            background: #2196F3;
+            color: white;
+            box-shadow: 0px 2px 4px -1px #808080a6;
+            outline:none;
+            cursor: pointer;
+        }
+
+        .product-detail{
+            padding:10px;
+        }
+        .modal-container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #00000038;
+        }
+
+        .hidden{
+        display: none;
+        }
+
+        .modal-content-loader{
+        width: 50%;
+        margin: auto;
+        background: white;
+        box-shadow: 0px 0px 10px 0px grey;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        }
+
+        .modal-header{
+        height: 40px;
+        background: #82ca9d;
+        }
+        .modal-body{
+        padding:10px;
+        }
+
+        .modal-footer{
+        height: 40px;
+        line-height: 40px;
+        padding: 10px;
+        text-align: right;
+        }
+
+        .rating-container{
+            border: 1px solid;
+            padding: 10px;
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="/bundles/index-bundle.js"></script>
+</body>
+
+</html>

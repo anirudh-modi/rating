@@ -1,0 +1,42 @@
+{
+  "name": "rating",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "build": "webpack",
+    "release": "migrate",
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "unmigrate": "sequelize db:migrate:undo:all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "10.x"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.4",
+    "@babel/preset-env": "7.4.4",
+    "@babel/preset-react": "7.0.0",
+    "babel": "6.23.0",
+    "babel-loader": "8.0.6",
+    "eslint": "^5.16.0",
+    "webpack": "^4.32.1",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "body-parser": "1.19.0",
+    "dotenv": "8.0.0",
+    "express": "4.16.4",
+    "pg": "7.11.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-router": "5.0.0",
+    "react-router-dom": "5.0.0",
+    "sequelize": "5.8.6",
+    "sequelize-cli": "5.4.0"
+  }
+}
